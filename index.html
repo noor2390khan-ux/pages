@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSpark | Master New Skills Online</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Edu<span>Spark</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="#">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-3 fw-bold mb-4">Unlock Your Potential with <span
+                            class="text-gradient">EduSpark</span></h1>
+                    <p class="lead mb-5">High-quality online courses designed for the future. Learn from the best and
+                        advance your career today.</p>
+                    <div class="hero-btns">
+                        <a href="#courses" class="btn btn-primary btn-lg me-3">Explore Courses</a>
+                        <a href="#" class="btn btn-outline-light btn-lg">How it Works</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <div class="glass-orb orb-1"></div>
+                    <div class="glass-orb orb-2"></div>
+                    <img src="images/web-dev.png" alt="Hero Illustration" class="img-fluid floating-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h3>10k+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h3>150+</h3>
+                        <p>Courses</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h3>98%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h3>50+</h3>
+                        <p>Expert Instructors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <h2 class="display-5 fw-bold">Popular <span class="text-gradient">Courses</span></h2>
+                <p>Choose from our wide range of world-class courses</p>
+            </div>
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/web-dev.png" class="img-fluid" alt="Web Development">
+                            <span class="badge bg-primary">Best Seller</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="category">Development</span>
+                                <div class="rating"><i class="fas fa-star text-warning"></i> 4.9 (2.1k)</div>
+                            </div>
+                            <h4 class="course-title">Full-Stack Web Development</h4>
+                            <p class="course-desc">Master HTML, CSS, JS, React, and Node.js from scratch.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="price">₨ 15,000</div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="images/ui-ux.png" class="img-fluid" alt="UI/UX Design">
+                            <span class="badge bg-success">Trending</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="category">Design</span>
+                                <div class="rating"><i class="fas fa-star text-warning"></i> 4.8 (1.5k)</div>
+                            </div>
+                            <h4 class="course-title">UI/UX Design Mastery</h4>
+                            <p class="course-desc">Learn Figma, Adobe XD, and User Research principles.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="price">₨ 12,500</div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop"
+                                class="img-fluid" alt="Data Science">
+                            <span class="badge bg-info">Popular</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="category">Data Science</span>
+                                <div class="rating"><i class="fas fa-star text-warning"></i> 4.7 (950)</div>
+                            </div>
+                            <h4 class="course-title">Python for Data Science</h4>
+                            <p class="course-desc">Analyze data using Pandas, NumPy, and Scikit-Learn.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="price">₨ 18,000</div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                class="img-fluid" alt="Digital Marketing">
+                            <span class="badge bg-warning text-dark">Marketing</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="category">Marketing</span>
+                                <div class="rating"><i class="fas fa-star text-warning"></i> 4.6 (1.2k)</div>
+                            </div>
+                            <h4 class="course-title">Digital Marketing Bootcamp</h4>
+                            <p class="course-desc">SEO, SEM, Social Media, and Content Strategy.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="price">₨ 10,000</div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                class="img-fluid" alt="Cyber Security">
+                            <span class="badge bg-secondary">Security</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="category">Technology</span>
+                                <div class="rating"><i class="fas fa-star text-warning"></i> 4.9 (800)</div>
+                            </div>
+                            <h4 class="course-title">Ethical Hacking & Cyber Security</h4>
+                            <p class="course-desc">Learn how to protect networks and systems.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="price">₨ 20,000</div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="course-card">
+                        <div class="course-img">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                class="img-fluid" alt="AI & ML">
+                            <span class="badge bg-danger">Advanced</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="category">AI</span>
+                                <div class="rating"><i class="fas fa-star text-warning"></i> 4.8 (600)</div>
+                            </div>
+                            <h4 class="course-title">Artificial Intelligence & ML</h4>
+                            <p class="course-desc">Building intelligent systems with Python & TensorFlow.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="price">₨ 25,000</div>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Why Choose <span class="text-gradient">EduSpark</span>?</h2>
+                    <p class="mb-5">We provide the tools and resources you need to succeed in your learning journey.</p>
+                    <div class="feature-item d-flex align-items-start mb-4">
+                        <div class="feature-icon"><i class="fas fa-video"></i></div>
+                        <div class="ms-4">
+                            <h5>High-Quality Lectures</h5>
+                            <p>Crystal clear video content with practical demonstrations.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item d-flex align-items-start mb-4">
+                        <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="ms-4">
+                            <h5>Verified Certificates</h5>
+                            <p>Get recognized for your hard work with our industry-led certificates.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item d-flex align-items-start mb-4">
+                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                        <div class="ms-4">
+                            <h5>Expert Community</h5>
+                            <p>Collaborate with fellow learners and get help from instructors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card p-4">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Learning" class="img-fluid rounded-4 shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-info" class="contact-section py-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5">
+                <h2 class="display-5 fw-bold">Get in <span class="text-gradient">Touch</span></h2>
+                <p>Have questions? We're here to help you start your journey.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="glass-card p-4 h-100">
+                        <h4 class="mb-4">Contact Information</h4>
+                        <div class="contact-info-item d-flex align-items-center mb-3">
+                            <div class="feature-icon small me-3"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <p class="mb-0 text-muted">Call Us</p>
+                                <h6>+92 300 1234567</h6>
+                            </div>
+                        </div>
+                        <div class="contact-info-item d-flex align-items-center mb-3">
+                            <div class="feature-icon small me-3"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <p class="mb-0 text-muted">Email Us</p>
+                                <h6>support@eduspark.pk</h6>
+                            </div>
+                        </div>
+                        <div class="contact-info-item d-flex align-items-center mb-4">
+                            <div class="feature-icon small me-3"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <p class="mb-0 text-muted">Location</p>
+                                <h6>Lahore, Pakistan</h6>
+                            </div>
+                        </div>
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="social-links">
+                            <a href="https://wa.me/923001234567" target="_blank" class="whatsapp"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://instagram.com/noor_fatima" target="_blank" class="instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com" target="_blank" class="facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="linkedin"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="glass-card p-4">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control custom-input" placeholder="Enter your name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control custom-input" placeholder="Enter your email"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Subject</label>
+                                    <input type="text" class="form-control custom-input" placeholder="How can we help?"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control custom-input" rows="4"
+                                        placeholder="Your message here..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100 mt-2">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-block" href="#">Edu<span>Spark</span></a>
+                    <p>Empowering learners worldwide with accessible, high-quality online education. Start your journey
+                        with us today.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact-info">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Data Science</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get latest updates and offers.</p>
+                    <div class="input-group mb-3 custom-input-group">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center py-4 border-top">
+                <p class="mb-0">&copy; 2024 EduSpark. Created by Noor Fatima. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

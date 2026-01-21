@@ -1,0 +1,421 @@
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #a855f7;
+    --dark-bg: #0f172a;
+    --light-text: #f8fafc;
+    --muted-text: #94a3b8;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Typography & Utilities */
+.text-gradient {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background: var(--gradient);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
+}
+
+.btn-outline-light {
+    border-radius: 50px;
+    padding: 12px 28px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    transition: padding 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white !important;
+}
+
+.navbar-brand span {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--muted-text) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    padding-top: 100px;
+    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.1), transparent),
+        radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.1), transparent);
+}
+
+.hero-content h1 {
+    line-height: 1.2;
+}
+
+.floating-img {
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.glass-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 1;
+}
+
+.orb-1 {
+    width: 300px;
+    height: 300px;
+    background: var(--primary-color);
+    top: 10%;
+    right: 5%;
+    opacity: 0.2;
+}
+
+.orb-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--secondary-color);
+    bottom: 20%;
+    right: 20%;
+    opacity: 0.2;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.stat-card {
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.stat-card:hover {
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+    transform: scale(1.05);
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.stat-card p {
+    color: var(--muted-text);
+    margin: 0;
+}
+
+/* Course Cards */
+.course-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    height: 100%;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.course-img {
+    position: relative;
+    padding: 10px;
+}
+
+.course-img img {
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.course-card:hover .course-img img {
+    transform: scale(1.1);
+}
+
+.course-img .badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.course-body {
+    padding: 20px;
+}
+
+.category {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.course-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.course-desc {
+    color: var(--muted-text);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--light-text);
+}
+
+/* Feature icons in contact section */
+.feature-icon.small {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+}
+
+/* Custom Contact Form Inputs */
+.custom-input {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+    color: white;
+}
+
+.custom-input::placeholder {
+    color: var(--muted-text);
+}
+
+/* Social Links Hover Effects */
+.social-links a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 12px;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+
+.social-links a.whatsapp:hover {
+    background: #25d366;
+    border-color: #25d366;
+}
+
+.social-links a.instagram:hover {
+    background: #e1306c;
+    border-color: #e1306c;
+}
+
+.social-links a.facebook:hover {
+    background: #1877f2;
+    border-color: #1877f2;
+}
+
+.social-links a.linkedin:hover {
+    background: #0a66c2;
+    border-color: #0a66c2;
+}
+
+/* Features */
+.feature-item {
+    padding: 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: var(--glass-bg);
+    transform: translateX(10px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+    background: var(--primary-color);
+    color: white;
+    transform: rotate(10deg);
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+.footer {
+    background: #0b1120;
+}
+
+.footer h5 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer p {
+    color: var(--muted-text);
+}
+
+.footer a {
+    color: var(--muted-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer a:hover {
+    color: var(--primary-color);
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+.custom-input-group .form-control {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: white;
+    border-radius: 10px 0 0 10px !important;
+}
+
+.custom-input-group .btn {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+/* Responsive */
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+    .hero-image {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
